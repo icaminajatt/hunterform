@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="HxHForm.css">
+		<title>Hunter Survey Form</title>
+		<script type="text/javascript" src="HxHForm.js"></script>
+
+	</head>
+	
+<body>
+
+	<img id="Logo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/defab05d-48e2-49f8-9e6c-74b3434b61a2/d7k4she-a72c9f88-41f0-4aeb-960b-e69f501a7fd9.png" alt="Hunter Association Logo">
+
+	<form action="#">
+		
+		<div id="fullpage">
+		
+			<h1 class="header">HUNTER ASSOCIATION</h1>
+				
+				<h3 class="header">Hunter Survey Form<h3>
+		
+				<table border="0">
+					<tr>
+						<td class="label_col">Name:</td>
+						<td class="input_col"><input name="Name" id="Name" type="text" onblur="validateName();"></td>
+						<td class="feedback_col"><span id="NamePrompt">&nbsp;</span></td>
+					</tr>
+					
+					<tr>
+						<td class="label_col">Address:</td>
+						<td class="input_col"><input name="address" id="address" type="text"></td>
+						<td class="feedback_col"><span id="addressPrompt"></span></td>
+					</tr>
+					
+					<tr>
+						<td class="label_col">Birthday:</td>
+						<td class="input_col"><input name="bday" id="bday" type="date"></td>
+						<td class="feedback_col"><span></span></td>
+					</tr>
+					
+					<tr>
+						<td class="label_col">Type of Hunter:</td>
+						<td class="input_col"><input name="type" id="type" type="text" placeholder="e.g. Rookie, Beast, Blacklist, etc."></td>
+						<td class="feedback_col"><span id="typePrompt"></span></td>
+					</tr>
+					
+					<tr>
+						<td class="label_col">Rank:</td>
+						<td class="input_col"><input type="radio" id="rank" name="rank" value="1 Star (Single-Star Hunter)" checked>1 Star (Single-Star Hunter)<br>
+											  <input type="radio" id="rank" name="rank" value="2 Stars (Double-Star Hunter)">2 Stars (Double-Star Hunter)<br>
+											  <input type="radio" id="rank" name="rank" value="3 Stars (Triple-Star Hunter)">3 Stars (Triple-Star Hunter)<br></td>
+						<td class="feedback_col"><span id="rankPrompt"></span></td>
+					</tr>
+					
+					<tr>
+						<td class="label_col">Nen Type:</td>
+						<td class="input_col"><input type="checkbox" name="nen" value="enhancement" checked>Enhancement<br>
+											  <input type="checkbox" name="nen" value="transmutation">Transmutation<br>
+											  <input type="checkbox" name="nen" value="emission">Emission<br>
+											  <input type="checkbox" name="nen" value="conjuration">Conjuration<br>
+											  <input type="checkbox" name="nen" value="manipulation">Manipulation<br>
+											  <input type="checkbox" name="nen" value="specialization">Specialization<br></td>
+						<td class="feedback_col"><span id="rankPrompt"></span></td>
+					</tr>
+					
+					<tr>
+						<td class="label_col">Messages via Q:</td>
+						<td class="input_col"><input name="num" id="num" type="text" onblur="validateNum();" placeholder="Enter 9-digit code"></td>
+						<td class="feedback_col"><span id="numPrompt"></span></td>
+					</tr>
+					
+					<tr>
+						<td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="HunterInfo();">Submit Hunter Information</span></td>
+					</tr>
+				</table>
+				
+				<span id="infoConfirm">&nbsp;</span>
+			</div>
+				
+	</form>
+
+</body>
+
+</html>
+					
+					
+
+</body>
+</html>
